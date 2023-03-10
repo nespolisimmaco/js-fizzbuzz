@@ -1,0 +1,42 @@
+/* ********** RESET ********** */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ********** GENERAL ********** */
+body {
+    background-color: cornflowerblue;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    /* debug */
+    border: 1px solid black;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4.5rem;
+    margin: 2rem 0;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box {
+    width: calc(100% / 6 - (100px / 6));
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background-color: #114B5F;
+}
