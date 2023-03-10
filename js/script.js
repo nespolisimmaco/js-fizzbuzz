@@ -6,21 +6,25 @@
 const gridElem = document.querySelector(".grid");
 
 for(let i = 1; i <= 100; i++) {
+    let color;
     if (i % 3 === 0 && i % 5 === 0) {
         // Multipli di 3 e di 5
         console.log("FizzBuzz");
-        gridElem.innerHTML += `<div class="box">${"FizzBuzz"}</div>`
+        color = "fizzbuzz";
+        gridElem.innerHTML += `<div class="box ${color}">${"FizzBuzz"}</div>`;
     } else if (i % 3 === 0) {
         // Multipli di 3
         console.log("Fizz");
-        gridElem.innerHTML += `<div class="box">${"Fizz"}</div>`
+        color = "fizz";
+        gridElem.innerHTML += `<div class="box ${color}">${"Fizz"}</div>`;
     } else if (i % 5 === 0) {
         // Multipli di 5
         console.log("Buzz");
-        gridElem.innerHTML += `<div class="box">${"Buzz"}</div>`
+        color = "buzz";
+        gridElem.innerHTML += `<div class="box ${color}">${"Buzz"}</div>`;
     } else {
         // Tutti gli altri numeri
         console.log(i);
-        gridElem.innerHTML += `<div class="box">${i}</div>`
+        gridElem.innerHTML += `<div class="box">${i}</div>`;
     }
 }

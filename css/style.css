@@ -15,8 +15,6 @@ body {
 .container {
     width: 80%;
     margin: 0 auto;
-    /* debug */
-    border: 1px solid black;
 }
 
 h1 {
@@ -39,4 +37,16 @@ h1 {
     align-items: center;
     font-size: 2rem;
     background-color: #114B5F;
+}
+
+.fizz {
+    background-color: #F2D398;
+}
+
+.buzz {
+    background-color: #56E39F;
+}
+
+.fizzbuzz {
+    background-color: #9B2915;
 }
